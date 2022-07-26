@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contas.css">
+    <title>Transação</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h4>Cadastro de Notas</h4></a>
+        <a href="contas.html"><h4>Transações</h4></a>
+      </header>
+
+    <div class="container">
+    <h2>Saldo Atual:</h2>
+    
+        <h1 class="balance" id="balance">R$ 0.00</h1>
+
+        <div class="operations">
+        <div>
+            <h4>Entradas</h4>
+            <p class="money plus" id="money-plus"> + R$ 0.00</p>
+        </div>
+
+        <div>
+            <h4>Saídas</h4>
+            <p class="money minus" id="money-minus">- R$ 0.00</p>
+        </div>
+    </div>
+ 
+    <h3>Transações</h3>
+
+    <ul class="transactions" id="transactions"></ul>
+    
+    <h3>Adcionar Entrada</h3>
+
+    <form  id="form">
+    <div class="form-control">
+        <label for="text">Nome</label>
+        <input autofocus type="text" name="text" id="text" placeholder="Nome da Transação">
+    </div>
+
+    <div class="form-control">
+        <label for="amount">Valor <br /> 
+        <small>(negativo - despesas, positivo - entradas)</small>
+        </label>
+        <input autofocus type="number" name="num" id="amount" placeholder="Valor da Transação">
+    </div>
+
+    <button class="btn"> Adicionar</button>
+</form>
+</div>
+
+    <script src="contas.js"></script>
+</body>
+</html>
